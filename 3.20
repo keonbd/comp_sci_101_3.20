@@ -1,0 +1,14 @@
+# Enter Solution Below
+water = int(input('How many gallons of water :'))
+total_gallons = water
+number = 0
+print()
+while water > 0:
+    while (water * .1) > 5:
+        water = water - (water * .1)
+        number += 1
+    else:
+        water = (water - 5)
+        number += 1
+    print('After grate', number, 'there are', water, 'left')
+print('It took ',number,' grates to absorb the', total_gallons, 'gallons')
